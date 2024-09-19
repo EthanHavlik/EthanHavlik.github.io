@@ -1,0 +1,10 @@
+/*Ethan Havlik
+September 19*/
+header {background-color: #e0e0e0;}
+footer {background-color: #e0e0e0;}
+p, ul, li {font-size: 20px;}
+#onion:link {color: #7777ff;}
+#onion:visited {color: #dd77dd;}
+/*The provided link to the Onion does not seem to work, so the visited state does not activate in my testing*/
+#onion:hover {color: #b0d0ff;}
+#onion:active {color: #aaffdd}
