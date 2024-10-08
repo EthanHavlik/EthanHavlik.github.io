@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<!-- Ethan Havlik
+     October 8 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Ethan Havlik">
+    <meta charset="UTF-8">
+    <meta name="description" content="Ethan Havlik web developer Boise Idaho">
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:ethanhavlik@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <fieldset>
+            <legend>How do I contact you?</legend>
+            <!-- It makes no sense for the following two input fields to be select boxes.  What would the options be?
+             The provided example put text fields here instead.  I can only assume that is what you meant, given the page numbers in the instructions. -->
+            <label for="company">Company:</label>
+            <input type="text" name="company" id="company" required>
+            <div></div>
+            <label for="person">Person to contact:</label>
+            <input type="text" name="person" id="person" required>
+            <div></div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+            <div></div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required>
+            <div></div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <label for="job-type">Type of position:</label>
+            <select name="job-type" id="job-type" required>
+                <option value="internship">Internship</option>
+                <option value="part-time">Part-time</option>
+                <option value="full-time">Full-time</option>
+                <option value="contract">Contract</option>
+                <option value="temporary">Temporary</option>
+                <option value="on-call">On call</option>
+            </select>
+            <div>
+                <textarea name="interview" id="interview" cols="100" rows="10" required>How should I prepare for the interview?</textarea>
+            </div>
+        </fieldset>
+        <br>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
