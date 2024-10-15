@@ -1,0 +1,17 @@
+header {background-color: #a8d6eb;}
+
+h1 {font-family: "Anton", sans-serif;}
+
+h2 {font-size: 1.5em;}
+
+.none {text-decoration: none;}
+
+.under {text-decoration: underline;}
+
+.over {text-decoration: overline;}
+
+.through {text-decoration: line-through;}
+
+#value {background-color: #aef0cc;}
+
+#example {background-color: #e3adb9;}
