@@ -1,0 +1,65 @@
+/*Ethan and Luke
+October 22*/
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+}
+
+html {
+	background-image: url("../images/jewelry.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav {
+	clear: both;
+}
+
+nav ul {
+	list-style-type: none;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-family: "Pacifico", cursive;
+	font-size: 4em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+}
+
+main {
+	background: linear-gradient(#ffffff, #f0f9e6);
+	margin: 20px;
+	padding: 10px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.addrightmargin {
+	margin-right: 10%;
+}
+
+#necklace {
+	float: left;
+	border-radius: 50%;
+}
+
+#outerwrapper {
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width: 70%;
+	margin-left: 15%;
+}
