@@ -1,0 +1,46 @@
+/*Ethan Havlik
+December 2*/
+
+form {
+    width: 70%;
+    margin: 0 15%;
+}
+
+input {
+    border: 1px solid crimson;
+    transition: all 0.25s linear;
+}
+
+input:focus {
+    font-size: 1.1em;
+    padding: 5px;
+    border: 2px solid cyan;
+    outline: none;
+}
+
+textarea {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+#howToContact div {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-column-gap: 10px;
+    margin: 5px 0;
+}
+
+#howToContact div label {
+    text-align: right;
+}
+
+#howToContact div input {
+    width: 60%;
+}
+
+#submit, #submit:focus {
+    border: 1px solid cyan;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 1em;
+}

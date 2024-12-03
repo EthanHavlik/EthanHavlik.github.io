@@ -1,0 +1,123 @@
+/*Ethan Havlik
+December 2*/
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("../font/SourceCodePro-Regular.otf") format("otf"),
+         url("../font/SourceCodePro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*element selectors*/
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+a {
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+a:hover {
+    color: cyan;
+}
+
+a:active {
+    color: crimson;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #222230;
+    padding: 0 60px;
+}
+
+h1 {
+    font-family: "Source Code Pro", Arial, sans-serif;
+    color: #eeeeee;
+}
+
+h1 a {
+    color: inherit;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+nav ul li {
+    border: 2px solid #eeeeee;
+    border-radius: 1.5em;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    background: linear-gradient(to right, crimson, #eeeeee 3% 97%, cyan);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 1em;
+}
+
+main ul {
+    text-align: left;
+    width: 40%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: "Source Code Pro", Arial, sans-serif;
+}
+
+p {
+    width: 80%;
+    margin: 0 10% 10px;
+}
+
+span {
+    background-color: #dde5ee;
+}
+
+footer {
+    background: linear-gradient(to right, crimson, #eeeeee 3% 97%, cyan);
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+hr {
+    width: 90%;
+    margin: 0 5% 10px;
+}
+
+footer img {
+    width: 16px;
+}
+
+/*classes*/
+
+.dircon {
+    padding: 0 15px;
+}
+
+/*ids*/
+
+#current {
+    background-color: #223070;
+}
+
+#homeBanner {
+    width: 70%;
+    border-radius: 20px;
+    margin: 0 15% 10px;
+}

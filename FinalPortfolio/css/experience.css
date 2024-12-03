@@ -1,0 +1,38 @@
+/*Ethan Havlik
+December 2*/
+
+.project{
+    background-color: lightcyan;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    width: 25%;
+    margin: 10px 20px;
+    padding: 15px 15px 25px;
+    text-align: center;
+}
+
+.enlarge{
+    display: block;
+    width: 30%;
+    margin: 15px auto;
+    padding: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    color: crimson;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#projects h2{
+    flex-basis: 100%;
+}

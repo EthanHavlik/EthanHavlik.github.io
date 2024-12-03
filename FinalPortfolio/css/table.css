@@ -1,0 +1,35 @@
+/*Ethan Havlik
+December 2*/
+
+table {
+    width: 50%;
+    margin: 5px 25%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 15px 0 10px;
+    font-weight: bold;
+}
+
+th {
+    font-weight: bold;
+    background-color: #dadada;
+}
+
+th, td {
+    text-align: left;
+    border: 2px solid crimson;
+    padding: 3px;
+}
+
+/*color cells*/
+
+#cyan {
+    background-color: cyan;
+}
+
+#olive {
+    background-color: olive;
+    color: white;
+}
