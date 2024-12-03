@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Ethan Havlik
+December 2-->
+<html lang="en">
+<head>
+    <title>Portfolio Contact</title>
+    <meta name="charset" content="UTF-8">
+    <meta name="description" content="Ethan Havlik's Portfolio - Contact">
+    <meta name="tags" content="Ethan Havlik contact form interview">
+    <meta name="author" content="Ethan Havlik">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/contact.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Ethan Havlik</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li id="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--contact form-->
+        <h2>Contact Form</h2>
+        <form action="mailto:ethanhavlik@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+            <fieldset id="howToContact">
+                <legend>How do I contact you?</legend>
+                <div>
+                    <label for="company">Company:</label>
+                    <input type="text" name="company" id="company" required>
+                </div>
+                <div>
+                    <label for="person">Person to contact:</label>
+                    <input type="text" name="person" id="person" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What opportunities are available at your company?</legend>
+                <label for="job-type">Type of position:</label>
+                <select name="job-type" id="job-type" required>
+                    <option value="" label="blank"></option>
+                    <option value="internship">Internship</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="contract">Contract</option>
+                    <option value="temporary">Temporary</option>
+                    <option value="on-call">On call</option>
+                </select>
+                <div>
+                    <textarea name="interview" id="interview" cols="100" rows="10" placeholder="How should I prepare for the interview?" required></textarea>
+                </div>
+            </fieldset>
+            <br>
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+        <!--direct contact-->
+        <h2>Alternatively, contact me directly</h2>
+        <a class="dircon" href="mailto:ethanhavlik@my.cwi.edu">Email</a>
+        <a class="dircon" href="tel:208-957-3011">Phone</a>
+    </main>
+    <footer>
+        <hr>
+        <p>Find me on <a target="_blank" href="https://www.linkedin.com">LinkedIn <img src="images/linkedin.png" alt="LinkedIn icon"></a> and <a target="_blank" href="https://github.com/EthanHavlik/EthanHavlik.github.io">GitHub <img src="images/github.png" alt="GitHub icon"></a></p>
+    </footer>
+</body>
+</html>
