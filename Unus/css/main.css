@@ -1,0 +1,116 @@
+/*version 1 - 1/31/25:  created file
+  version 1.1 - 2/2/25:  added styles for nav bar, main content, footer, and .panel
+  version 3 - 3/2/25:  added styles for #blurb and #space*/
+
+/*------------------elements-----------------*/
+* {
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+header a {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 75%;
+    align-self: end;
+}
+nav a {
+    display: grid;
+    background-color: #1d8edb;
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-decoration: none;
+    align-items: center;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/*nav a:active {
+    height: 90%;
+    align-self: flex-end;
+}*/
+
+main {
+    background-color: #303030;
+    color: #e8e8e8;
+    padding: 25px;
+}
+main img {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+input[type="button"], input[type="submit"] {
+    margin: 10px 30px;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1d8edb;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+/*------------------classes------------------*/
+.center {
+    text-align: center;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 15px;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+}
+.panel img {
+    grid-row: 1 / span 2;
+}
+.panel h2 {
+    align-self: flex-end;
+}
+.panel p {
+    align-self: flex-start;
+}
+
+/*--------------------ids--------------------*/
+#blurb {
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+#space {
+    margin-top: 30px;
+}
+
+#pressed {
+    height: 60%;
+    align-self: flex-end;
+}
