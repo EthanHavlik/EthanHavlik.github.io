@@ -1,6 +1,7 @@
 //version 2 - 2/16/25:  created file
 //version 3 - 3/2/25:  converted JavaScript to TypeScript and transpiled back
 //version 4 - 3/9/25:  added regex for email format validation
+//version 5 - 3/10/25:  added form submitted message
 "use strict";
 const getElement = (selector) => document.querySelector(selector);
 //since this script is tailor made for a specific page, upfront type assertion seems prudent; it avoids constant type checking and enables things like .submit() and .value
@@ -50,6 +51,8 @@ const processEntries = () => {
     }
     if (msgs.length === 0) {
         form.submit();
+        msgs.push("Form submitted.");
+        displayErrorMsgs(msgs);
     }
     else {
         displayErrorMsgs(msgs);

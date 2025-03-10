@@ -1,6 +1,7 @@
 //version 2 - 2/16/25:  created file
 //version 3 - 3/2/25:  converted JavaScript to TypeScript and transpiled back
 //version 4 - 3/9/25:  added regex for email format validation
+//version 5 - 3/10/25:  added form submitted message
 "use strict";
 
 const getElement = (selector:string) => document.querySelector(selector);
@@ -53,7 +54,9 @@ const processEntries = () => {
     }
 
     if (msgs.length === 0) {
-        form.submit();  
+        form.submit();
+        msgs.push("Form submitted.")
+        displayErrorMsgs(msgs);
     } else {
         displayErrorMsgs(msgs);
     }
