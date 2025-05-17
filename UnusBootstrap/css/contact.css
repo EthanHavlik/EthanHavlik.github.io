@@ -1,0 +1,70 @@
+/*version 2 - 2/16/25:  created file; added styles for contact form
+  version 5.1 - 5/14/25:  added media query to make form responsive; did not use Bootstrap in order to preserve current contact.js functionality*/
+
+form {
+    background-color: #252525;
+    border-radius: 40px;
+    padding: 30px;
+}
+form div {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 20fr 1fr;
+}
+form div label {
+    grid-column: 1 / -1;
+    padding: 10px 0;
+}
+
+div span {
+    color: #ff4040;
+    text-align: center;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+#buttons {
+    grid-template-columns: 1fr 1fr;
+}
+#buttons input {
+    margin: auto;
+}
+
+#contactBy {
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr;
+    margin: 25px 10px;
+    align-items: center;
+}
+
+#resetForm {
+    background-color: #d54040;
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 80%;
+        margin: auto;
+    }
+    form div {
+        grid-template-columns: 5fr 10fr 1fr;
+    }
+    form div label {
+        grid-column: auto;
+    }
+
+    #contactBy {
+        grid-template-columns: 5fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    }
+}
+
+@media (min-width: 992px) {
+    form {
+        width: 65%;
+    }
+    form div {
+        grid-template-columns: 5fr 15fr 1fr;
+    }
+}

@@ -1,0 +1,30 @@
+/*version 2 - 2/16/25:  created file; added styles for controllers carousel
+  version 5 - 5/12/25:  removed #controllers, which has been deprecated by Bootstrap; added .card
+  version 5.1 - 5/14/25:  changed how #carousel displays cards since the number of cards varies*/
+
+.card {
+    text-align: center;
+}
+.card img {
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+.card p {
+    margin-bottom: 0;
+}
+
+.container {
+    padding-bottom: 25px;
+}
+
+#carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-column-gap: 50px;
+}
+#carousel div {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #252525;
+}
