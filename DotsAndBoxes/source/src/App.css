@@ -1,0 +1,73 @@
+section {
+    width: fit-content;
+    margin: auto;
+}
+
+div, button {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: transparent;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    border: none;
+}
+
+.corner {
+    height: 5px;
+    width: 5px;
+    background-color: #888888;
+}
+
+.hline {
+    height: 5px;
+    width: 50px;
+    border: 2px dashed #888888;
+}
+
+.vline {
+    height: 50px;
+    width: 5px;
+    border: 2px dashed #888888;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+}
+
+.red {
+    background-color: #db4444;
+    border-color: #db4444;
+    color: #ffffff;
+}
+
+.blue {
+    background-color: #2b38f1;
+    border-color: #2b38f1;
+    color: #ffffff;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.box.red {
+    background-color: #df8888;
+}
+.box.blue {
+    background-color: cornflowerblue;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border: none;
+}
